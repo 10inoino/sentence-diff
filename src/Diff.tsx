@@ -19,6 +19,8 @@ const Diff = ({ string1 = "", string2 = "", mode = "characters" }) => {
   if (mode === "characters") groups = diff.diffChars(string1, string2);
   if (mode === "words") groups = diff.diffWords(string1, string2);
 
+  console.log(groups)
+
   const mappedNodes = groups.map(group => {
     const { value, added, removed } = group;
     let nodeStyles;
