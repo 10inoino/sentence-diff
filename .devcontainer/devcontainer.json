@@ -1,0 +1,15 @@
+{
+	"name": "react-template",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "react-template",
+	"workspaceFolder": "/workspaces",
+	"settings": {},
+	"extensions": [
+		"dbaeumer.vscode-eslint",
+		"esbenp.prettier-vscode",
+		"yzhang.markdown-all-in-one",
+		"eamodio.gitlens",
+		"wayou.vscode-todo-highlightx"
+	],
+  	"postStartCommand": "yarn install"
+}

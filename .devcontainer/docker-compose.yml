@@ -1,0 +1,11 @@
+services:
+  react-template:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: /bin/sh -c "while sleep 1000; do :; done"
+    volumes:
+      - ../:/workspaces
+      - react-template-volume:/workspaces/node_modules
+volumes:
+  react-template-volume:
