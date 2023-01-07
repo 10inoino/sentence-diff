@@ -1,15 +1,15 @@
 {
-	"name": "sentence-diff",
-	"dockerComposeFile": "docker-compose.yml",
-	"service": "sentence-diff",
-	"workspaceFolder": "/workspaces",
-	"settings": {},
-	"extensions": [
-		"dbaeumer.vscode-eslint",
-		"esbenp.prettier-vscode",
-		"yzhang.markdown-all-in-one",
-		"eamodio.gitlens",
-		"wayou.vscode-todo-highlightx"
-	],
-  	"postStartCommand": "yarn install"
+  "name": "sentence-diff",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "sentence-diff",
+  "workspaceFolder": "/workspaces",
+  "settings": {},
+  "extensions": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "yzhang.markdown-all-in-one",
+    "eamodio.gitlens",
+    "wayou.vscode-todo-highlightx"
+  ],
+  "postStartCommand": "yarn install"
 }

@@ -5,12 +5,12 @@ window.Diff = diff;
 const styles = {
   added: {
     color: "green",
-    backgroundColor: "#b5efdb"
+    backgroundColor: "#b5efdb",
   },
   removed: {
     color: "red",
-    backgroundColor: "#fec4c0"
-  }
+    backgroundColor: "#fec4c0",
+  },
 };
 
 const Diff = ({ string1 = "", string2 = "", mode = "characters" }) => {
@@ -19,9 +19,9 @@ const Diff = ({ string1 = "", string2 = "", mode = "characters" }) => {
   if (mode === "characters") groups = diff.diffChars(string1, string2);
   if (mode === "words") groups = diff.diffWords(string1, string2);
 
-  console.log(groups)
+  console.log(groups);
 
-  const mappedNodes = groups.map(group => {
+  const mappedNodes = groups.map((group) => {
     const { value, added, removed } = group;
     let nodeStyles;
     if (added) nodeStyles = styles.added;
@@ -35,7 +35,7 @@ const Diff = ({ string1 = "", string2 = "", mode = "characters" }) => {
 Diff.propTypes = {
   string1: PropTypes.string,
   string2: PropTypes.string,
-  mode: PropTypes.oneOf(["characters", "words"])
+  mode: PropTypes.oneOf(["characters", "words"]),
 };
 
 export default Diff;
