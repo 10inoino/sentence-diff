@@ -49,5 +49,9 @@
   },
   "devDependencies": {
     "prettier": "2.8.1"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "semi": false
   }
 }

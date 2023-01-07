@@ -1,10 +1,10 @@
-import Diff from "./Diff";
-import "./App.css";
-import { useState } from "react";
+import Diff from './Diff'
+import './App.css'
+import { useState } from 'react'
 
 function App() {
-  const [baseText, setBaseText] = useState<string>("");
-  const [targetText, setTargetText] = useState<string>("");
+  const [baseText, setBaseText] = useState<string>('')
+  const [targetText, setTargetText] = useState<string>('')
 
   return (
     <div>
@@ -23,7 +23,7 @@ function App() {
         <Diff string1={baseText} string2={targetText} mode="words" />
       </main>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
