@@ -43,6 +43,8 @@ const AutoNewLIne = (text: string): string => {
   let replaced = text
     .replace(/\./g, '.\n')
     .replace(/\n\s+/g, '\n')
+    .replace(/(\s){2,}/g, '\s')
+    .replace(/'/g, '’')
     .replace(/(\n){2,}/g, '\n')
   return replaced
 }
