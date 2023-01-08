@@ -66,6 +66,7 @@ function App() {
           padding="3"
           borderRadius="md"
           color="black"
+          overflow="scroll"
         >
           <Diff string1={baseText} string2={targetText} mode="words" />
         </Text>
